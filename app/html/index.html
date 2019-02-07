@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="content">
+        <header class="header">
+            <div class="header-container">
+                <div class="header-left">
+                    <a class="logo" href="#">
+                        <img src="img/logo.png" alt="logo" height="51" width="59"/>
+                        BRAN<span>D</span>
+                    </a>
+                    <form action="index.html">
+                        <details>
+                            <summary>Browse</summary>
+                            <nav class="browse">
+                                <div class="triangle"></div>
+                                <h2>women</h2>
+                                <ul>
+                                    <li><a href="product.html">Dresses</a></li>
+                                    <li><a href="product.html">Tops</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                    <li><a href="product.html">Blazers</a></li>
+                                    <li><a href="product.html">Denim</a></li>
+                                    <li><a href="product.html">Leggings/Pants</a></li>
+                                    <li><a href="product.html">Skirts/Shorts</a></li>
+                                </ul>
+                                <h2>men</h2>
+                                <ul>
+                                    <li><a href="product.html">Tees/Tank tops</a></li>
+                                    <li><a href="product.html">Shirts/Polos</a></li>
+                                    <li><a href="product.html">Sweaters</a></li>
+                                    <li><a href="product.html">Sweatshirts/Hoodies</a></li>
+                                    <li><a href="product.html">Blazers</a></li>
+                                    <li><a href="product.html">Jackets/vests</a></li>
+                                </ul>
+                            </nav>
+                        </details>
+                        <input name="search" type="text" placeholder="Searh for item...">
+                        <button class="submit" type="submit">
+                            <img src="img/search-submit.png" alt="submit">
+                        </button>
+                    </form>
+                </div>
+                <nav class="header-right">
+                    <div class="cart-container">
+                        <a href="shoping-cart.html"><img class="cart-icon" src="img/carticon.svg" alt="cart"></a>
+                        <div class="cartDropdown">
+                            <div class="triangle"></div>
+                            <i id="cartPageSwitchUp" class="fas fa-angle-up cartPageSwitch"></i>
+                            <div id="cartDroptdown-items-wrap"></div>
+                            <i id="cartPageSwitchDown" class="fas fa-angle-down cartPageSwitch cartPageSwitch_active"></i>
+                            <div class="cartDropdown-bottom">
+                                <div class="cartDropdown-bottom-total">total<span id="cartTotal"></span></div>
+                                <a href="checkout.html" class="cartDropdown-bottom-button">checkout</a>
+                                <a href="shoping-cart.html" class="cartDropdown-bottom-button">go to cart</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <details>
+                        <summary>My Account</summary>
+                        <div class="my-account">
+                            <div class="triangle"></div>
+                            <h2>women</h2>
+                            <ul>
+                                <li><a href="product.html">Dresses</a></li>
+                                <li><a href="product.html">Tops</a></li>
+                                <li><a href="product.html">Sweaters/Knits</a></li>
+                                <li><a href="product.html">Jackets/Coats</a></li>
+                            </ul>
+                            <h2>men</h2>
+                            <ul>
+                                <li><a href="product.html">Tees/Tank tops</a></li>
+                                <li><a href="product.html">Shirts/Polos</a></li>
+                            </ul>
+                        </div>
+                    </details>
+                </nav>
+            </div>
+        </header>
+        <nav class="main-nav">
+            <ul class="main-menu">
+                <li><a href="#" class="main-menu-active">home</a></li>
+                <li>
+                    <a href="product.html">man</a>
+                    <div class="mega">
+                        <div class="triangle"></div>
+                        <div class="mega-part">
+                            <h2>women</h2>
+                            <ul>
+                                <li><a href="product.html">Dresses</a></li>
+                                <li><a href="product.html">Tops</a></li>
+                                <li><a href="product.html">Sweaters/Knits</a></li>
+                                <li><a href="product.html">Jackets/Coats</a></li>
+                                <li><a href="product.html">Blazers</a></li>
+                                <li><a href="product.html">Denim</a></li>
+                                <li><a href="product.html">Leggings/Pants</a></li>
+                                <li><a href="product.html">Skirts/Shorts</a></li>
+                                <li><a href="product.html">Accessories </a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-part">
+                            <div>
+                                <h2>kids</h2>
+                                <ul>
+                                    <li><a href="product.html">Dresses</a></li>
+                                    <li><a href="product.html">Tops</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>men</h2>
+                                <ul>
+                                    <li><a href="product.html">DressesTops</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mega-part">
+                            <div><h2>accessories</h2>
+                                <ul>
+                                    <li><a href="product.html">Dresses</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                    <li><a href="product.html">Tops</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-offer">
+                                <div class="mega-offer-text">
+                                    super<br>sale!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="product.html">woman</a>
+                    <div class="mega">
+                        <div class="triangle"></div>
+                        <div class="mega-part">
+                            <h2>women</h2>
+                            <ul>
+                                <li><a href="product.html">Dresses</a></li>
+                                <li><a href="product.html">Tops</a></li>
+                                <li><a href="product.html">Sweaters/Knits</a></li>
+                                <li><a href="product.html">Jackets/Coats</a></li>
+                                <li><a href="product.html">Blazers</a></li>
+                                <li><a href="product.html">Denim</a></li>
+                                <li><a href="product.html">Leggings/Pants</a></li>
+                                <li><a href="product.html">Skirts/Shorts</a></li>
+                                <li><a href="product.html">Accessories </a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-part">
+                            <div>
+                                <h2>kids</h2>
+                                <ul>
+                                    <li><a href="product.html">Dresses</a></li>
+                                    <li><a href="product.html">Tops</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>men</h2>
+                                <ul>
+                                    <li><a href="product.html">DressesTops</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mega-part">
+                            <div><h2>accessories</h2>
+                                <ul>
+                                    <li><a href="product.html">Dresses</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                    <li><a href="product.html">Tops</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-offer">
+                                <div class="mega-offer-text">
+                                    super<br>sale!
+                                </div>
+                            </div>
+                        </div>
+                    </div></li>
+                <li>
+                    <a href="product.html">kids</a>
+                    <div class="mega">
+                        <div class="triangle"></div>
+                        <div class="mega-part">
+                            <h2>women</h2>
+                            <ul>
+                                <li><a href="product.html">Dresses</a></li>
+                                <li><a href="product.html">Tops</a></li>
+                                <li><a href="product.html">Sweaters/Knits</a></li>
+                                <li><a href="product.html">Jackets/Coats</a></li>
+                                <li><a href="product.html">Blazers</a></li>
+                                <li><a href="product.html">Denim</a></li>
+                                <li><a href="product.html">Leggings/Pants</a></li>
+                                <li><a href="product.html">Skirts/Shorts</a></li>
+                                <li><a href="product.html">Accessories </a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-part">
+                            <div>
+                                <h2>kids</h2>
+                                <ul>
+                                    <li><a href="product.html">Dresses</a></li>
+                                    <li><a href="product.html">Tops</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>men</h2>
+                                <ul>
+                                    <li><a href="product.html">DressesTops</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mega-part">
+                            <div><h2>accessories</h2>
+                                <ul>
+                                    <li><a href="product.html">Dresses</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                    <li><a href="product.html">Tops</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-offer">
+                                <div class="mega-offer-text">
+                                    super<br>sale!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="product.html">accessories</a>
+                    <div class="mega">
+                        <div class="triangle"></div>
+                        <div class="mega-part">
+                            <h2>women</h2>
+                            <ul>
+                                <li><a href="product.html">Dresses</a></li>
+                                <li><a href="product.html">Tops</a></li>
+                                <li><a href="product.html">Sweaters/Knits</a></li>
+                                <li><a href="product.html">Jackets/Coats</a></li>
+                                <li><a href="product.html">Blazers</a></li>
+                                <li><a href="product.html">Denim</a></li>
+                                <li><a href="product.html">Leggings/Pants</a></li>
+                                <li><a href="product.html">Skirts/Shorts</a></li>
+                                <li><a href="product.html">Accessories </a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-part">
+                            <div>
+                                <h2>kids</h2>
+                                <ul>
+                                    <li><a href="product.html">Dresses</a></li>
+                                    <li><a href="product.html">Tops</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>men</h2>
+                                <ul>
+                                    <li><a href="product.html">DressesTops</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mega-part">
+                            <div><h2>accessories</h2>
+                                <ul>
+                                    <li><a href="product.html">Dresses</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                    <li><a href="product.html">Tops</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-offer">
+                                <div class="mega-offer-text">
+                                    super<br>sale!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="checkout.html">featured</a>
+                    <div class="mega">
+                        <div class="triangle"></div>
+                        <div class="mega-part">
+                            <h2>women</h2>
+                            <ul>
+                                <li><a href="product.html">Dresses</a></li>
+                                <li><a href="product.html">Tops</a></li>
+                                <li><a href="product.html">Sweaters/Knits</a></li>
+                                <li><a href="product.html">Jackets/Coats</a></li>
+                                <li><a href="product.html">Blazers</a></li>
+                                <li><a href="product.html">Denim</a></li>
+                                <li><a href="product.html">Leggings/Pants</a></li>
+                                <li><a href="product.html">Skirts/Shorts</a></li>
+                                <li><a href="product.html">Accessories </a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-part">
+                            <div>
+                                <h2>kids</h2>
+                                <ul>
+                                    <li><a href="product.html">Dresses</a></li>
+                                    <li><a href="product.html">Tops</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>men</h2>
+                                <ul>
+                                    <li><a href="product.html">DressesTops</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mega-part">
+                            <div><h2>accessories</h2>
+                                <ul>
+                                    <li><a href="product.html">Dresses</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                    <li><a href="product.html">Tops</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-offer">
+                                <div class="mega-offer-text">
+                                    super<br>sale!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="product.html">hot&nbsp;deals</a>
+                    <div class="mega">
+                        <div class="triangle"></div>
+                        <div class="mega-part">
+                            <h2>women</h2>
+                            <ul>
+                                <li><a href="product.html">Dresses</a></li>
+                                <li><a href="product.html">Tops</a></li>
+                                <li><a href="product.html">Sweaters/Knits</a></li>
+                                <li><a href="product.html">Jackets/Coats</a></li>
+                                <li><a href="product.html">Blazers</a></li>
+                                <li><a href="product.html">Denim</a></li>
+                                <li><a href="product.html">Leggings/Pants</a></li>
+                                <li><a href="product.html">Skirts/Shorts</a></li>
+                                <li><a href="product.html">Accessories </a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-part">
+                            <div>
+                                <h2>kids</h2>
+                                <ul>
+                                    <li><a href="product.html">Dresses</a></li>
+                                    <li><a href="product.html">Tops</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>men</h2>
+                                <ul>
+                                    <li><a href="product.html">DressesTops</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mega-part">
+                            <div><h2>accessories</h2>
+                                <ul>
+                                    <li><a href="product.html">Dresses</a></li>
+                                    <li><a href="product.html">Sweaters/Knits</a></li>
+                                    <li><a href="product.html">Jackets/Coats</a></li>
+                                    <li><a href="product.html">Tops</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-offer">
+                                <div class="mega-offer-text">
+                                    super<br>sale!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="slider">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="slider-container">
+                            <div class="slider-text">
+                                <h2>the brand</h2>
+                                <h3>of luxurious <span>fashion</span></h3>
+                            </div>
+                            <div class="slider-img-container slider-img-container_1"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-container">
+                            <div class="slider-text">
+                                <h2>the brand</h2>
+                                <h3>of luxurious <span>fashion</span></h3>
+                            </div>
+                            <div class="slider-img-container slider-img-container_2"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-container">
+                            <div class="slider-text">
+                                <h2>the brand</h2>
+                                <h3>of luxurious <span>fashion</span></h3>
+                            </div>
+                            <div class="slider-img-container slider-img-container_3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="offers">
+            <div class="offers-left">
+                <a href="product.html">
+                    <div class="offer-big" id="man">
+                    <div class="label">
+                        <h3>hot deal</h3>
+                        <h2>for men</h2>
+                    </div>
+                    </div>
+                </a>
+                <a href="product.html">
+                    <div class="offer-small" id="wallet">
+                    <div class="label">
+                        <h3>luxurious & trendy</h3>
+                        <h2>accessories</h2>
+                    </div>
+                    </div>
+                </a>
+            </div>
+            <div class="offers-right">
+                <a href="product.html">
+                    <div class="offer-small" id="woman">
+                    <div class="label">
+                        <h3>30% offer</h3>
+                        <h2>women</h2>
+                    </div>
+                </div>
+                </a>
+                <a href="product.html">
+                    <div class="offer-big" id="kid">
+                    <div class="label">
+                        <h3>new arrivals</h3>
+                        <h2>for kids</h2>
+                    </div>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <section class="shop">
+            <h2>Featured items</h2>
+            <p>Shop for items based on what we faetured in this week</p>
+            <div class="mini-shop-container"></div>
+            <a class="browse-products-button" href="product.html">
+                Browse all products
+                <img src="img/right-arrow.png" alt=">" height="7" width="15"/>
+            </a>
+        </section>
+        <section class="advantages">
+            <div class="advantages-left">
+                <div>
+                    <h2>30% <span>offer</span></h2>
+                    <h3>for women</h3>
+                </div>
+            </div>
+            <div class="advantages-right">
+                <article class="advantage">
+                    <div class="advantage-left"><img src="img/delivery-icon.png" alt="delivery"/></div>
+                    <div class="advantage-right">
+                        <h2>Free delivery</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illo impedit iusto repellendus voluptatum?</h3>
+                    </div>
+                </article>
+                <article class="advantage">
+                    <div class="advantage-left"><img src="img/discount-icon.png" alt="discount"/></div>
+                    <div class="advantage-right">
+                        <h2>Sales & Discounts</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illo impedit iusto repellendus voluptatum?</h3>
+                    </div>
+                </article>
+                <article class="advantage">
+                    <div class="advantage-left"><img src="img/crown-icon.png" alt="crown"/></div>
+                    <div class="advantage-right">
+                        <h2>Quality assurance</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illo impedit iusto repellendus voluptatum?</h3>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer1">
+            <div class="footer1-container">
+                <div class="review">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="review-inner">
+                                    <div class="review-left">
+                                        <img src="img/review1.png" height="83" width="83" alt="photo"/>
+                                    </div>
+                                    <article class="review-right">
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt esse expedita, minima omnis perferendis quis quod repellendus veniam voluptates!"</p>
+                                        <h2>Bin Burhan</h2>
+                                        <h3>Dhake, Bd</h3>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="review-inner">
+                                    <div class="review-left">
+                                        <img src="img/review2.png" alt="photo" height="83" width="83"/>
+                                    </div>
+                                    <article class="review-right">
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt esse expedita, minima omnis perferendis quis quod repellendus veniam voluptates!"</p>
+                                        <h2>Daniil Badrak</h2>
+                                        <h3>Saint-Petersburg, Russia</h3>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="review-inner">
+                                    <div class="review-left">
+                                        <img src="img/review3.png" alt="photo" height="83" width="83"/>
+                                    </div>
+                                    <article class="review-right">
+                                        <p>"I would definitely say something good about this servise if my mouth was'nt filled with this delicious fries!"</p>
+                                        <h2>Andreev Yan</h2>
+                                        <h3>Moscow, Russia</h3>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="subscribe">
+                    <h2>subscribe</h2>
+                    <h3>for our newsletter and promotion</h3>
+                    <form action="index.html">
+                        <input type="email" placeholder="Enter Your E-mail">
+                        <button class="submit" type="submit">Subscribe</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="footer2-brand">
+                <a class="logo" href="#">
+                    <img src="img/logo.png" alt="logo" height="51" width="59"/>
+                    BRAN<span>D</span>
+                </a>
+                <p>Lorem ipsum dolor sit amet, conse tenetur veritatis. Ab adipisci aliquam atque autem expedita ipsam magni necessitatibus sed ullam voluptatibus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur dolor eos et expedita ipsa officiis possimus quasi voluptatem voluptates.</p>
+            </div>
+            <nav class="footer2-other">
+                <h2>company</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="product.html">Shop</a></li>
+                    <li><a href="checkout.html">About</a></li>
+                    <li><a href="checkout.html">How it works</a></li>
+                    <li><a href="checkout.html">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="footer2-other">
+                <h2>information</h2>
+                <ul>
+                    <li><a href="checkout.html">Terms&Conditions</a></li>
+                    <li><a href="checkout.html">Privacy Policy</a></li>
+                    <li><a href="checkout.html">How to Buy</a></li>
+                    <li><a href="checkout.html">How to Sell</a></li>
+                    <li><a href="checkout.html">Promotion</a></li>
+                </ul>
+            </nav>
+            <nav class="footer2-other">
+                <h2>Shop category</h2>
+                <ul>
+                    <li><a href="product.html">Men</a></li>
+                    <li><a href="product.html">Women</a></li>
+                    <li><a href="product.html">Child</a></li>
+                    <li><a href="product.html">Apparel</a></li>
+                    <li><a href="product.html">Browse All</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer3">
+            <div class="footer3-container">
+                <div class="footer3-left">
+                    <p>&copy; 2018 Brand  All rights reserved</p>
+                </div>
+                <aside class="footer3-right">
+                    <a href="https://www.facebook.com/"><div class="feed-icon"><i class="fab fa-facebook-f"></i></div></a>
+                    <a href="https://twitter.com/"><div class="feed-icon"><i class="fab fa-twitter"></i></div></a>
+                    <div class="feed-icon-unactive"><i class="fab fa-linkedin-in"></i></div>
+                    <a href="https://ru.pinterest.com/"><div class="feed-icon"><i class="fab fa-pinterest-p"></i></div></a>
+                    <a href="https://plus.google.com/"><div class="feed-icon"><i class="fab fa-google-plus-g"></i></div></a>
+                </aside>
+            </div>
+        </div>
+    </footer>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/ShopItem.min.js"></script>
+    <script src="js/MiniShop.min.js"></script>
+    <script src="js/Cart.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(51815963, "init", {
+        id:51815963,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+      });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/51815963" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+</body>
+</html>

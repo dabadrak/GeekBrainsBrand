@@ -1,0 +1,67 @@
+@import "mixins"
+@import "vars"
+
+.checkout-accordion
+  outline: 0
+  &[open]
+    summary
+      border-bottom: 1px solid rgba(232, 232, 232, 0)
+  summary
+    color: $text-color
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    padding: 39px 0
+    border-bottom: 1px solid #e8e8e8
+    &::-webkit-details-marker
+      display: none
+
+  .checkout-accordion-inner
+    padding: 0 35px 39px 0
+    display: flex
+    border-bottom: 1px solid #e8e8e8
+    h2, label
+      color: $text-color
+      font-size: 13px
+      font-weight: 400
+      text-transform: uppercase
+      display: block
+    h3
+      color: #b3b2b2
+      font-size: 13px
+      font-weight: 400
+      margin-bottom: 33px
+    .checkout-accordion-inner-left
+      width: 50%
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      justify-content: space-between
+      label
+        display: flex
+        align-items: center
+      label.register-checkout
+        padding-bottom: 33px
+      input
+        margin-right: 14px
+    .checkout-accordion-inner-right
+      width: 50%
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      justify-content: space-between
+      sup
+        font-size: 1.2em
+        color: red
+      input
+        width: 390px
+        height: 45px
+        border: 1px solid #eaeaea
+        margin: 16px 0
+        color: $text-color
+        padding: 0 17px
+        font-size: 14px
+      input
+        display: block
+      .required
+        color: red

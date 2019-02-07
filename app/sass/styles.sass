@@ -1,0 +1,1040 @@
+@import "mixins"
+@import "vars"
+@import "index"
+@import "checkout"
+@import "product"
+@import "cart"
+@import "main930"
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i')
+
+body
+  font-family: 'lato', sans-serif
+summary
+  outline: 0
+button:focus
+  outline: 0
+input
+  outline: 0
+
+.content
+  min-height: calc(100vh - 537px)
+
+.header
+  height: 100px
+  border: solid 1px #ececec
+  box-sizing: border-box
+  background-color:  #ffffff
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17)
+
+.header-container
+  height: 100%
+  width: $site-width
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 0
+
+.header-left
+  display: flex
+  align-items: center
+  form
+    display: flex
+  input
+    height: 38px
+    border: 1px solid #e6e6e6
+    border-left-color: transparent
+    padding-left: 20px
+    position: relative
+    left: 87px
+    width: 279px
+  button.submit
+    height: 38px
+    width: 38px
+    background: #ffffff
+    border-bottom-right-radius: 3px
+    border-top-right-radius: 3px
+    box-sizing: border-box
+    display: flex
+    justify-content: center
+    position: relative
+    left: 87px
+    border: 1px solid #e6e6e6
+    border-left-color: transparent
+    cursor: pointer
+  details
+    position: absolute
+    z-index: 2
+    &[open]
+      summary:after
+        content: url("../img/down-arrow-grey.png")
+        transform: rotate(180deg)
+        margin-top: 9px
+    .browse
+      border-radius: 5px
+      background-color:  #ffffff
+      position: relative
+      border: #e8e8e8 solid 1px
+      padding: 0 17px 10px
+      box-sizing: border-box
+      box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.05)
+      .triangle
+        width: 9px
+        height: 9px
+        background: #ffffff
+        transform: rotate(45deg)
+        position: absolute
+        right: 87px
+        top: -5px
+        border-top: #e8e8e8 solid 1px
+        border-left: #e8e8e8 solid 1px
+      h2
+        margin: 0
+        color: #232323
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase
+        border-bottom: #e8e8e8 solid 1px
+        padding-bottom: 8px
+        padding-top: 21px
+      ul
+        padding: 0
+        margin: 0
+        text-transform: none
+      li
+        list-style-type: none
+      a
+        color: #4f4f4f
+        font-size: 14px
+        font-weight: 400
+        line-height: 27px
+        text-decoration: none
+        &:hover
+          text-decoration: underline
+    summary
+      border-bottom-left-radius: 3px
+      border-top-left-radius: 3px
+      border: 1px solid #e6e6e6
+      box-sizing: border-box
+      background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%)
+      width: 87px
+      height: 38px
+      font-size: 14px
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+      &::-webkit-details-marker
+        display: none
+      &:after
+        content: url("../img/down-arrow-grey.png")
+        margin-left: 8px
+
+.header-right
+  position: relative
+  margin: auto 0
+  width: 130px
+  details
+    position: absolute
+    z-index: 1
+    &[open]
+      summary:after
+        content: url("../img/down-arrow-white.png")
+        transform: rotate(180deg)
+        margin-top: 9px
+    .my-account
+      border-radius: 5px
+      background-color:  #ffffff
+      position: relative
+      border: #e8e8e8 solid 1px
+      padding: 0 17px 10px
+      box-sizing: border-box
+      box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.05)
+      .triangle
+        width: 9px
+        height: 9px
+        background: #ffffff
+        transform: rotate(45deg)
+        position: absolute
+        right: 12px
+        top: -5px
+        border-top: #e8e8e8 solid 1px
+        border-left: #e8e8e8 solid 1px
+      h2
+        margin: 0
+        color: #232323
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase
+        border-bottom: #e8e8e8 solid 1px
+        padding-bottom: 8px
+        padding-top: 21px
+      ul
+        padding: 0
+        margin: 0
+        text-transform: none
+      li
+        list-style-type: none
+      a
+        color: #4f4f4f
+        font-size: 14px
+        font-weight: 400
+        line-height: 27px
+        text-decoration: none
+        &:hover
+          text-decoration: underline
+    summary
+      background-color:  #f16d7f
+      width: 130px
+      height: 38px
+      display: flex
+      justify-content: center
+      align-items: center
+      color: white
+      cursor: pointer
+      border-radius: 3px
+      &::-webkit-details-marker
+        display: none
+      &:after
+        content: url("../img/down-arrow-white.png")
+        margin-left: 8px
+
+.main-nav
+  width: 680px
+  margin: 0 auto
+  display: flex
+  justify-content: center
+  .main-menu
+    display: flex
+    justify-content: space-between
+    list-style-type: none
+    text-transform: uppercase
+    padding: 0
+    margin: 0
+    > li
+      position: relative
+      &:hover div.mega
+        display: flex
+      > a
+        text-decoration: none
+        display: block
+        color:  #222222
+        font-size: 14px
+        font-weight: 700
+        padding: 20px
+        &:hover
+          border-bottom: #f16d7f solid 3px
+          padding-bottom: 17px
+      a.main-menu-active
+        border-bottom: #f16d7f solid 3px
+        padding-bottom: 17px
+
+.mega
+  border-radius: 5px
+  background-color:  #ffffff
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.05)
+  border: #e8e8e8 solid 1px
+  position: absolute
+  top: 50px
+  display: none
+  z-index: 1
+  .triangle
+    width: 9px
+    height: 9px
+    background: #ffffff
+    transform: rotate(45deg)
+    position: absolute
+    left: 44px
+    top: -5px
+    border-top: #e8e8e8 solid 1px
+    border-left: #e8e8e8 solid 1px
+
+
+.main-menu li:nth-child(3) .mega
+  left: -33px
+.main-menu li:nth-child(4) .mega
+  left: -132px
+.main-menu li:nth-child(5) .mega
+  left: -204px
+.main-menu li:nth-child(6) .mega
+  left: -336px
+.main-menu li:nth-child(7) .mega
+  left: -447px
+
+.main-menu li:nth-child(3) .mega .triangle
+  left: 104px
+.main-menu li:nth-child(4) .mega .triangle
+  left: 175px
+.main-menu li:nth-child(5) .mega .triangle
+  left: 307px
+.main-menu li:nth-child(6) .mega .triangle
+  left: 419px
+.main-menu li:nth-child(7) .mega .triangle
+  left: 536px
+
+
+.mega-part
+  width: 262px
+  position: relative
+  box-sizing: border-box
+  padding: 0 17px 6px 17px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  h2
+    margin: 0
+    color: #232323
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    border-bottom: #e8e8e8 solid 1px
+    padding-bottom: 8px
+    padding-top: 21px
+  ul
+    padding: 0
+    margin: 0
+    text-transform: none
+  li
+    list-style-type: none
+  a
+    color: #4f4f4f
+    font-size: 14px
+    font-weight: 400
+    line-height: 27px
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+      color: black
+
+
+.mega-offer
+  height: 116px
+  width: 235px
+  background: url("../img/mega-offer.jpg")
+  display: flex
+  justify-content: flex-end
+  align-items: flex-end
+  margin-bottom: 4px
+  .mega-offer-text
+    margin: 13px
+    color: #ffffff
+    font-size: 22px
+    font-weight: 600
+    text-transform: uppercase
+
+
+.footer
+  height: 537px
+
+.footer1
+  height: 438px
+  background: url("../img/poster-bottom.jpg") center bottom
+  background-size: cover
+  margin-bottom: 109px
+  &:hover .subscribe form
+    -webkit-animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+    animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+
+.footer1-container
+  width: $site-width
+  margin: 0 auto
+  display: flex
+
+
+.review
+  width: 50%
+  margin-top: 111px
+  .carousel-indicators
+    position: absolute
+    top: 150px
+    right: 245px
+  .review-inner
+    display: flex
+  li
+    cursor: pointer
+    background: #d6d6d6
+    transition: background-color 0.5s
+    border: 0
+    height: 4px
+    &:hover
+      background-color: #f16d7f
+  li.active
+    background-color: #f16d7f
+    cursor: default
+  .review-right
+    margin-left: 28px
+    p
+      color:  rgba(34, 34, 36, 0.67)
+      font-size: 16px
+      font-style: italic
+    h2
+      color:  #f16d7f
+      font-size: 16px
+      font-weight: 700
+      margin: 0
+    h3
+      color:  #222224
+      font-size: 12px
+      font-weight: 300
+      margin: 0
+
+.subscribe
+  text-align: center
+  margin-top: 148px
+  width: 50%
+  h2
+    margin: 0
+    color:  rgba(34, 34, 36, 0.67)
+    font-size: 24px
+    font-weight: 400
+    text-transform: uppercase
+  h3
+    color:  rgba(34, 34, 36, 0.67)
+    font-size: 14px
+    font-weight: 400
+    margin: 0 0 35px
+  input
+    height: 46px
+    width: 300px
+    border-bottom-left-radius: 23px
+    border-top-left-radius: 23px
+    border: 0 solid
+    background: #e1e1e1
+    padding-left: 40px
+    outline: 0
+  button
+    height: 46px
+    width: 104px
+    border-bottom-right-radius: 23px
+    border-top-right-radius: 23px
+    border: 0 solid
+    background: #f16d7f
+    color: white
+    font-size: 14px
+    font-weight: 400
+    position: relative
+    top: -2px
+    left: -3px
+    cursor: pointer
+    transition: background-color 0.3s
+    outline: 0
+    &:hover
+      text-decoration: none
+      background-color: #ff626b
+      color: #ffffff
+
+
+.footer2
+  width: $site-width
+  display: flex
+  justify-content: space-between
+  margin: 0 auto 79px
+  .footer2-brand
+    width: 33.33333333%
+    margin-right: 64px
+    p
+      margin-top: 29px
+      color:  #898989
+      font-size: 14px
+      font-weight: 300
+      line-height: 24px
+
+  .footer2-other
+    width: 22.222222222%
+    h2
+      color:  #f16d7f
+      font-size: 18px
+      font-weight: 700
+      text-transform: uppercase
+    a
+      text-decoration: none
+      color:  #898989
+      &:hover
+        text-decoration: underline
+    ul
+      list-style-type: none
+      padding: 0
+      li
+        line-height: 42px
+        font-size: 16px
+        font-weight: 400
+
+
+.footer3
+  height: 79px
+  background: #e6e6e6
+  .footer3-container
+    width: $site-width
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+  .footer3-left p
+    display: block
+    margin: 0
+    color:  #7a7a7a
+    font-size: 16px
+    font-weight: 400
+  .footer3-right
+    display: flex
+    a
+      color: #b2b2b2
+      &:hover
+        text-decoration: none
+    i
+      color:  #b2b2b2
+      transition: color 0.5s
+
+  .feed-icon
+    background-color:  #ffffff
+    width: 32px
+    height: 32px
+    margin-right: 8px
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: background-color 0.5s
+    &:hover
+      background-color:  #f16d7f
+    &:hover i
+      color: white
+  .feed-icon-unactive
+    background-color: #e9e9e9
+    width: 32px
+    height: 32px
+    margin-right: 8px
+    display: flex
+    justify-content: center
+    align-items: center
+    i
+      color:  #b2b2b2
+
+.container
+  width: $site-width
+  margin: 0 auto
+  &__advantages-product
+    background-color: #222224
+    display: flex
+  &__shoping-cart
+    padding: 90px 0 80px 0
+
+.logo
+  display: flex
+  align-items: center
+  text-decoration: none
+  font-size: 27px
+  color:  #222222
+  font-weight: 300
+  margin-right: 37px
+  &:hover
+    text-decoration: none
+    color: #222222
+  img
+    margin-right: 13px
+  span
+    color:  #f16d7f
+    font-size: 27px
+    font-weight: 900
+
+.heading
+  height: 148px
+  background: $heading-color
+
+.heading-container
+  height: 100%
+  width: $site-width
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  .heading-container-right
+    display: flex
+    align-items: center
+    h1
+      color: $second-color
+      font-size: 24px
+      font-weight: 400
+      text-transform: uppercase
+      margin: 0
+
+.heading-container-bread-crumbs
+  display: flex
+  align-items: center
+
+.bread-crumbs
+  margin: 0
+  padding: 0
+  li
+    list-style-type: none
+    display: inline-block
+    color: $text-color
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 300
+  .selectable-bread-crumbs:after
+    content: " /"
+  .active-bread-crumbs
+    color: $second-color
+    font-weight: 700
+  a
+    text-decoration: none
+    color: $text-color
+    &:hover
+      text-decoration: underline
+
+
+.button
+  padding: 1em 4em
+  min-width: 150px
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  transition: border-color 0.3s, color 0.3s
+  color: $text-color
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  &:hover
+    border-color: $second-color
+    color: $second-color
+    text-decoration: none
+    cursor: pointer
+  &__checkout
+    width: 180px
+  &__product
+    border-radius: 3px
+    height: 44px
+    font-size: 16px
+    padding: 0 47px
+    text-transform: uppercase
+  &__cart
+    font-size: 11px
+    width: 50%
+    padding: 1em 3em
+  &__cartTotal
+    margin-top: 17px
+    padding: 1.2em 2em
+    width: 100%
+  &__show-options
+    height: 38px
+    padding: 0
+    margin-left: 10px
+  &_pink
+    color: $second-color
+    border-color: $second-color
+    transition: background-color 0.5s, color 0.5s
+    &:hover
+      background-color: $second-color
+      color: white
+  &_fullPink
+    color: white
+    background-color: $second-color
+    border-color: $second-color
+    transition: background-color 0.5s, border-color 0.5s
+    &:hover
+      background-color: $second-hover-color
+      border-color: $second-hover-color
+      color: white
+
+.pagination
+  border: 1px solid $text-color-lighter
+  border-radius: 3px
+  display: inline-block
+  li
+    padding: 0.5em
+    transition: background-color 0.5s, color 0.5s
+    color: $text-color-lighter
+    font-size: 16px
+    text-decoration: none
+    cursor: pointer
+    float: left
+    &:hover
+      background-color: #efefef
+      color: $second-color
+    &:nth-child(1)
+      padding-left: 0.6em
+    &:nth-last-child(1)
+      padding-right: 0.6em
+  .active
+    background-color: #efefef
+    color: $second-color
+
+.preview
+  height: 777px
+  background: #f7f7f7
+  .carousel-inner
+    height: 724px
+    margin: 0 auto
+    .carousel-item
+      &__1
+        background: url("../img/single-page-preview1.jpg") center no-repeat
+        height: 695px
+      &__2
+        background: url("../img/single-page-preview2.jpg") center no-repeat
+        height: 695px
+      &__3
+        background: url("../img/single-page-preview3.jpg") center no-repeat
+        height: 695px
+  .carousel-indicators
+    bottom: -90px
+    li
+      cursor: pointer
+      background: #d6d6d6
+      transition: background-color 0.5s
+      width: 63px
+      margin: 0
+      &:hover
+        background-color: #f16d7f
+    li.active
+      background-color: #f16d7f
+      cursor: default
+  .carousel-control-prev
+    justify-content: flex-start
+    &-icon
+      width: 47px
+      height: 47px
+      background: #c6c6c6
+      display: flex
+      justify-content: center
+      align-items: center
+      i
+        color: white
+        font-size: 20px
+  .carousel-control-next
+    justify-content: flex-end
+    &-icon
+      width: 47px
+      height: 47px
+      background: #c6c6c6
+      display: flex
+      justify-content: center
+      align-items: center
+      i
+        color: white
+        font-size: 20px
+
+.main
+  width: $site-width
+  &__single-page
+    margin: -86px auto 119px auto
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    padding: 73px
+    .text
+      width: 642px
+      padding-bottom: 43px
+      border-bottom: 1px solid #eaeaea
+      margin: 0 auto 63px auto
+      text-align: center
+      h3
+        margin: 0 0 34px 0
+        color: $second-color
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+      h2
+        margin: 0 0 67px 0
+        color: $text-color
+        font-size: 18px
+        font-weight: 400
+        text-transform: uppercase
+      p
+        color: $text-color-light
+        font-size: 14px
+        font-weight: 300
+        margin: 0 0 28px 0
+      h4
+        color: $text-color-lighter
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        margin: 0 0 37px 0
+        span
+          color: $text-color-dark
+        .first
+          margin-right: 44px
+      h5
+        color: $second-color
+        font-size: 24px
+        font-weight: 700
+        margin-bottom: 0
+  &__checkout
+    margin: 89px auto 93px auto
+  &__product
+    margin: 71px auto 110px auto
+    display: flex
+
+
+.options
+  width: 537px
+  margin: 0 auto
+  .filter
+    display: flex
+    justify-content: space-between
+    margin-bottom: 28px
+    .part
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      label
+        color: $text-color-dark
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+      input
+        width: 144px
+        border: 1px solid #eaeaea
+      select
+        width: 144px
+        border: 1px solid #eaeaea
+  button
+    width: 100%
+    height: 55px
+    border: 1px solid $second-color
+    background-color: #ffffff
+    color: $second-color
+    font-size: 16px
+    font-weight: 700
+    transition: background 0.5s, color 0.5s
+    &:hover
+      background: $second-color
+      color: #ffffff
+
+
+.mini-shop
+  margin-bottom: 94px
+  >h2
+    color: $text-color
+    font-size: 24px
+    font-weight: 400
+    text-transform: uppercase
+    text-align: center
+    margin: 0 0 72px 0
+
+.mini-shop-container
+  width: $site-width
+  margin: 0 auto
+  flex-wrap: wrap
+  display: flex
+  justify-content: space-between
+
+
+.product
+  width: 238px
+  height: 364px
+  text-decoration: none
+  position: relative
+  display: flex
+  flex-direction: column
+  transition: box-shadow 0.5s, transform 0.2s ease-out
+  &:hover
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16)
+    transform: scale(1.05)
+  .product-img
+    transition: filter 0.5s
+  &:hover img.product-img
+    filter: brightness(50%)
+  &:hover .product-img-container
+    filter: brightness(50%)
+  &:hover div.add-to-cart
+    display: flex
+  a
+    text-decoration: none
+  h2
+    color:  #222222
+    font-size: 13px
+    font-weight: 400
+    text-align: left
+    padding-left: 15px
+    padding-top: 19px
+    text-transform: uppercase
+  h3
+    color:  #f16d7f
+    font-size: 16px
+    font-weight: 700
+    padding-left: 15px
+    text-align: left
+    margin: 0
+  .add-to-cart
+    position: absolute
+    top: 30%
+    left: 28%
+    display: none
+    a
+      color:  #ffffff
+      font-size: 13px
+      font-weight: 700
+      display: flex
+      align-items: center
+      justify-content: center
+      border: #ffffff solid 1px
+      padding: 10px 12px
+      transition: background-color 0.3s
+      box-sizing: border-box
+      border-radius: 3px
+      cursor: pointer
+      &:hover
+        background-color: rgba(255, 255, 255, 0.21)
+        color:  #ffffff
+      img
+        margin-right: 8px
+  &__product-shop
+    height: auto
+    width: 31%
+    padding-bottom: 20px
+    margin-bottom: 40px
+    .add-to-cart
+      flex-wrap: wrap
+      width: 126px
+      justify-content: space-between
+      top: 25%
+      a
+        width: 100%
+        margin-bottom: 5px
+      a:nth-child(2)
+        width: 48%
+      a:nth-child(3)
+        width: 48%
+        i
+          font-size: 18px
+  &__product-mini-shop
+    height: auto
+    padding-bottom: 20px
+    margin-bottom: 40px
+    .add-to-cart
+      flex-wrap: wrap
+      width: 126px
+      justify-content: space-between
+      top: 25%
+      a
+        width: 100%
+        margin-bottom: 5px
+      a:nth-child(2)
+        width: 48%
+      a:nth-child(3)
+        width: 48%
+        i
+          font-size: 18px
+
+  .product-img-container
+    width: 100%
+    height: 310px
+    background-position: center
+    background-size: cover
+
+.cart-container
+  position: relative
+  padding-bottom: 10px
+  top: 5px
+  float: left
+  right: 50px
+  &:hover .cartDropdown
+    display: flex
+
+.cartDropdown
+  position: absolute
+  border-radius: 5px
+  background-color:  #ffffff
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.05)
+  border: #e8e8e8 solid 1px
+  top: 40px
+  left: -16px
+  flex-direction: column
+  justify-content: space-between
+  padding: 9px 17px
+  display: none
+  z-index: 3
+  .triangle
+    width: 9px
+    height: 9px
+    background: #ffffff
+    transform: rotate(45deg)
+    position: absolute
+    left: 28px
+    top: -5px
+    border-top: #e8e8e8 solid 1px
+    border-left: #e8e8e8 solid 1px
+  .cartPageSwitch
+    text-align: center
+    display: block
+    color: #b0b0b0
+    &_active:hover
+      color: $second-color
+      cursor: pointer
+
+
+.cartDropdown-item
+  display: flex
+  justify-content: space-between
+  padding-bottom: 13px
+  padding-top: 17px
+  border-bottom: #ededed solid 1px
+  &:first-child
+    padding-top: 8px
+  &:last-child
+    border: 0
+    padding-bottom: 8px
+  .cartDropdown-item-text
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    width: 142px
+    padding: 0 13px
+    h3
+      margin: 0 0 10px 0
+      color: #222222
+      font-size: 12px
+      font-weight: 700
+      text-transform: uppercase
+      text-decoration: none
+    img
+      margin: 0 0 10px 0
+    p
+      margin: 0
+      color: #f16d7f
+      font-weight: 400
+      text-transform: uppercase
+      font-size: 12px
+
+  .cartDropdown-detBtn-wrap
+    display: flex
+    align-items: center
+    i
+      color: #b0b0b0
+      &:hover
+        color: red
+
+.cartDropdown-bottom
+  margin-top: 10px
+  display: flex
+  flex-direction: column
+  align-items: center
+  color: #222222
+  text-align: justify
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+  border-top: #ededed solid 1px
+  .cartDropdown-bottom-total
+    display: flex
+    justify-content: space-between
+    margin-top: 18px
+    margin-bottom: 30px
+    width: 100%
+  .cartDropdown-bottom-button
+    width: 227px
+    height: 53px
+    border: 1px solid #ededed
+    display: flex
+    justify-content: center
+    align-items: center
+    text-decoration: none
+    color: #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 8px
+    transition: color 0.5s, border-color 0.5s
+    &:hover
+      color: #f16d7f
+      border-color: #f16d7f
+      text-decoration: none

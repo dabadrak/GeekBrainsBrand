@@ -1,0 +1,29 @@
+[
+  {
+    "id": 2,
+    "imgURL": "img/product-wide2.png",
+    "name": "iceberg jacket",
+    "size": "xl",
+    "color": "black",
+    "price": 48,
+    "quantity": 2
+  },
+  {
+    "id": 4,
+    "imgURL": "img/product-wide4.png",
+    "name": "mango people t-shirt",
+    "size": "xl",
+    "color": "grey",
+    "price": 15,
+    "quantity": 1
+  },
+  {
+    "id": 3,
+    "imgURL": "img/product-wide3.png",
+    "name": "nike jacket",
+    "size": "xl",
+    "color": "blue",
+    "price": 103,
+    "quantity": 1
+  }
+]
